@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { useState } from 'react';
 import { 
   Settings, 
   Key, 
@@ -145,12 +145,12 @@ export function Services() {
             <motion.div
               key={service.id}
               layout
+              transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
               onClick={() => setActiveId(service.id)}
               style={{ '--i': index } as React.CSSProperties}
               className={`
                 relative overflow-hidden cursor-pointer shrink-0 lg:shrink
                 liquid-card ${service.colorClass}
-                transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]
                 ${isActive 
                   ? 'h-[380px] sm:h-[350px] lg:h-auto lg:flex-[3] shadow-[0_0_50px_rgba(0,0,0,0.5)] z-10' 
                   : 'h-[72px] lg:h-auto lg:flex-[1] opacity-90 hover:opacity-100'

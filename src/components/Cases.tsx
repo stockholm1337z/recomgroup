@@ -105,28 +105,28 @@ export function Cases() {
               <img 
                 src={item.image} 
                 alt={item.title} 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 lg:group-hover:scale-110"
               />
               
               {/* Subtle gradient for title readability in default state */}
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-0" />
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity duration-500 opacity-0 lg:opacity-100 lg:group-hover:opacity-0" />
               
               {/* Content Container */}
               <div className="absolute inset-x-0 bottom-0 z-20 flex flex-col">
                 {/* Glass Background - Fades in on hover */}
-                <div className="absolute inset-0 bg-black/70 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-black/70 backdrop-blur-md opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500" />
                 
                 {/* Colorful top border line */}
-                <div className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r ${item.gradient} opacity-0 group-hover:opacity-80 transition-opacity duration-500 z-10`} />
+                <div className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r ${item.gradient} opacity-100 lg:opacity-0 lg:group-hover:opacity-80 transition-opacity duration-500 z-10`} />
                 
                 <div className="p-6 md:p-8 relative z-10">
                   {/* Title */}
                   <h3 className="text-2xl font-bold text-white tracking-tight">{item.title}</h3>
                   
                   {/* Points - Collapsed initially */}
-                  <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+                  <div className="grid grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
                     <div className="overflow-hidden">
-                      <ul className="space-y-3 pt-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                      <ul className="space-y-3 pt-5 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500 delay-100">
                         {item.points.map((point, idx) => (
                           <li key={idx} className="flex items-start gap-3 text-white/90 text-sm">
                             <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${item.gradient} shrink-0 mt-1.5`} />
