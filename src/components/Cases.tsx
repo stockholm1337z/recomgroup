@@ -4,7 +4,7 @@ import { Tile } from './Tile';
 const cases = [
   {
     id: 1,
-    title: 'Мебельный ТЦ',
+    title: 'Мебельный Торговый Центр',
     image: '/photo/furniture store.png',
     gradient: 'from-orange-500 to-purple-600',
     points: [
@@ -17,11 +17,11 @@ const cases = [
   },
   {
     id: 2,
-    title: 'Торговый комплекс (ТК)',
+    title: 'Торговый комплекс',
     image: '/photo/tk.png',
     gradient: 'from-yellow-400 to-emerald-500',
     points: [
-      'Реконцепция ТЦ',
+      'Реконцепция ТК',
       'Внутренняя перепланировка',
       'Изменение матрицы арендаторов',
       'Увеличение эффективности использования торговых площадей на 15%',
@@ -30,7 +30,7 @@ const cases = [
   },
   {
     id: 3,
-    title: 'Бизнес-центр (БЦ)',
+    title: 'Бизнес-центр',
     image: '/photo/elite.png',
     gradient: 'from-blue-500 to-cyan-400',
     points: [
@@ -57,7 +57,7 @@ const cases = [
   },
   {
     id: 5,
-    title: 'Элитный ТЦ',
+    title: 'Торгово-развлекательный центр',
     image: '/photo/shopping-center.png',
     gradient: 'from-emerald-400 to-cyan-500',
     points: [
@@ -68,7 +68,7 @@ const cases = [
   },
   {
     id: 6,
-    title: 'Бизнес-центр (БЦ)',
+    title: 'Бизнес-центр',
     image: '/photo/bissines.png',
     gradient: 'from-indigo-500 to-purple-500',
     points: [
